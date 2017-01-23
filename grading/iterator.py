@@ -1,6 +1,7 @@
 import os
 import sys
 
+#using this as a hack to allow for an import of Script where I only need to change it jn one place
 sys.path.extend(['/Users/timmcvicker/Classes/CPSC1111'])
 
 #todo change this
