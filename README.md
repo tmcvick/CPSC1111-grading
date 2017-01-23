@@ -35,7 +35,7 @@ In order to grade labs, the following steps are necessary:
 
 3. run the grade_commit command to push the REPORTS to the student buckets
 
-4. Each TA runs the grade_pull command and then grades his/her students formatting by replacing the necessary numbers in the REPORT files.  Add comments under the formatting line, but make sure to replace the 0/10 with the appropriate grade.  *REPLACING IS VERY IMPORTANT* For Example: 10/10
+4. Each TA runs the grade_pull command and then grades his/her students formatting by replacing the necessary numbers in the REPORT files.  Add comments under the formatting line, but make sure to replace the 0/10 with the appropriate grade.  **REPLACING IS VERY IMPORTANT** For Example: 10/10
 
 5. Once completed, each TA will run the grade_commit script to push his/her changes
 
