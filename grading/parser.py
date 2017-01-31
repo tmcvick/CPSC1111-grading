@@ -18,14 +18,14 @@ def parse_grade_report(dir, rootdir):
                     num = (line.split('e')[1])
                     grade = int(num.split('/')[0])
             for line in open(filename, 'r'):
-                if 'formatting' in line:
+                if 'formatting test' in line:
                     word = line.split('...')[1]
                     for row in reader:
                         if dir == row[0] and row[1] == 'total':
                             functionality_score = row[2]
                             total_score = int(functionality_score) + int(word.split('/')[0])
                             if total_score != grade:
-                                print('********** {0} grade incorrect ***********'.format(dir))
+                                print('********** {0}{1} grade incorrect ***********'.format(rootdir, dir))
                             writer.writerow([dir, total_score])
 
 
