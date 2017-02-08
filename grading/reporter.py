@@ -2,7 +2,7 @@ import csv
 import os
 
 #todo change this
-LAB_NUM='Lab1'
+LAB_NUM='Lab2'
 
 class Reporter:
     __studentReport = None
