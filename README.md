@@ -22,6 +22,8 @@ The grades are uploaded to the handin bucket, as well as exported into a csv for
 
 * alias grade_pull="cd /Users/timmcvicker/Classes/CPSC1111-repo/cpsc1111-004; ./update; cd ../cpsc1111-003; ./update; cd ../cpsc1111-002; ./update; cd ../cpsc1111-001; ./update"
 
+* alias grade_combine="cd /Users/timmcvicker/Classes/CPSC1111-repo; python /Users/timmcvicker/Classes/CPSC1111/grading/combiner.py"
+
 #Workflow
 In order to grade labs, the following steps are necessary:
 
@@ -45,4 +47,6 @@ In order to grade labs, the following steps are necessary:
 
 8. run the grade_report command to centralize the formatting grades
 
-9. upload csv and REPORTS, if necessary
+9. For Canvas grades, run the grade_combine alias to combine the new csv into the canvas gradebook csv
+
+10. upload csv and REPORTS, if necessary
