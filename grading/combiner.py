@@ -2,7 +2,7 @@ import os
 import csv
 
 #todo change this
-LAB_NUM='Lab2'
+LAB_NUM='Lab4'
 found = []
 with open('./grades-{0}final.csv'.format(LAB_NUM), 'r+') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)

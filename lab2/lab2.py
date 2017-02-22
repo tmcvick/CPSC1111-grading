@@ -72,7 +72,7 @@ class Script:
 
         if self.__compiler.gcc_compile({'-o': '{0}{1}/lab2'.format(rootdir, username), '-Wall': ''}) == 0:
             # -Wall errors are sent via stderr. if the compiler returns 0 it succeeded, so any stderr is a warning
-            if self.__compiler.stderr() == "":  # there were warnings
+            if self.__compiler.stderr() == "":  # there were no warnings
                 self.__scores['noWarnings']['value'] = self.__scores['noWarnings']['max']
             else:
                 print('=== There were -Wall warnings! ===')

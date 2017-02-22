@@ -5,16 +5,15 @@ import sys
 sys.path.extend(['/Users/timmcvicker/Classes/CPSC1111'])
 
 #todo change this
-from lab2.lab2 import Script
+from lab4.lab4 import Script
 
-LAB_NUM='Lab2'
+LAB_NUM='Lab4'
 
 DIRLIST = ['./cpsc1111-004/assignments/{0}/'.format(LAB_NUM), './cpsc1111-003/assignments/{0}/'.format(LAB_NUM), './cpsc1111-002/assignments/{0}/'.format(LAB_NUM), './cpsc1111-001/assignments/{0}/'.format(LAB_NUM)]
 CSV_FILE = './grades-{0}.csv'.format(LAB_NUM)
 
 
 def run_grading(dir, rootdir):
-    #todo make sure to change this lab1
     grading_script = Script()
     grading_script.grade(dir, rootdir)
 

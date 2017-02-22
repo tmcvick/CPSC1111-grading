@@ -2,13 +2,12 @@ import csv
 import os
 
 #todo change this
-LAB_NUM='Lab2'
+LAB_NUM='Lab4'
 
 class Reporter:
     __studentReport = None
     __grader = None
 
-    #todo i need to figure out how to export these grades
     def __init__(self, username, rootdir):
         filepath = '{0}{1}/REPORT'.format(rootdir, username)
 
