@@ -2,7 +2,7 @@ import os
 import csv
 
 #todo change this
-LAB_NUM='Lab4'
+LAB_NUM='Lab5'
 DIRLIST = ['./cpsc1111-004/assignments/{0}/'.format(LAB_NUM), './cpsc1111-003/assignments/{0}/'.format(LAB_NUM), './cpsc1111-002/assignments/{0}/'.format(LAB_NUM), './cpsc1111-001/assignments/{0}/'.format(LAB_NUM)]
 
 

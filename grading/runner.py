@@ -37,7 +37,7 @@ class Runner:
         if timeout:
             # Timer function
             def timeout_kill(p):
-                print("Timeout, killig child process...")
+                print("Timeout, killing child process...")
                 p.kill()
                 self.__error = 'Timeout'
 
@@ -70,7 +70,7 @@ class Runner:
         if timeout:
             # Timer function
             def timeout_kill(p):
-                print("Timeout, killig child process...")
+                print("Timeout, killing child process...")
                 p.kill()
                 self.__error = 'Timeout'
 

@@ -5,9 +5,9 @@ import sys
 sys.path.extend(['/Users/timmcvicker/Classes/CPSC1111'])
 
 #todo change this
-from lab4.lab4 import Script
+from lab6.lab6 import Script
 
-LAB_NUM='Lab4'
+LAB_NUM='Lab6'
 
 DIRLIST = ['./cpsc1111-004/assignments/{0}/'.format(LAB_NUM), './cpsc1111-003/assignments/{0}/'.format(LAB_NUM), './cpsc1111-002/assignments/{0}/'.format(LAB_NUM), './cpsc1111-001/assignments/{0}/'.format(LAB_NUM)]
 CSV_FILE = './grades-{0}.csv'.format(LAB_NUM)
