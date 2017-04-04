@@ -23,7 +23,7 @@ class Reporter:
             self.__grader = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
             self.__grader.writerow(row)
 
-    def report_scores(self, scores, username):
+    def report_scores(self, scores, username, input, output, input2, output2):
         total = 0
         max_possible = 0
         print("\n======================")
@@ -45,5 +45,11 @@ class Reporter:
             self.__studentReport.write(report_string)
 
         self.write_grade([username, "total", total])
-        self.__studentReport.write('Final Score {0}/{1}'.format(total, max_possible))
+        self.__studentReport.write('Final Score {0}/{1}\n'.format(total, max_possible))
+        self.__studentReport.write("INPUT: {0}\nOUTPUT:\n".format(input))
+        for line in output:
+            self.__studentReport.write("{0}\n".format(line))
+        self.__studentReport.write("INVALID INPUT: {0}\nINVALID OUTPUT:\n".format(input2))
+        for line in output2:
+            self.__studentReport.write("{0}\n".format(line))
         print('Final Score {0}/{1}'.format(total, max_possible))
