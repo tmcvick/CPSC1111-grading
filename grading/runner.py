@@ -55,7 +55,7 @@ class Runner:
             self.__stderr = output[1].decode(self.__encoding)
         return proc.returncode, args_list
 
-    def make(self, target=None, input=[], output=PIPE, timeout=None):
+    def make(self, target=None, input=[], output=PIPE, timeout=None, rootdir=None, username=None):
         """Execute the Make command
         'target' is the target of make we want to use
         'input' is a list of input strings to be passed to the proc's stdin
@@ -63,7 +63,7 @@ class Runner:
         'timeout' kill process after 'timeout' seconds if provided
         """
         # Generate command
-        cmd = ['make', target] if target else ['make']
+        cmd = ['make', '-C', '{0}{1}/'.format(rootdir, username), '{0}'.format(target)]if target else ['make']
         print('Executing command: {0}\nInput: {1}\n'.format(cmd, input))
         proc = Popen(cmd, stdout=output, stderr=output, stdin=PIPE)
 
